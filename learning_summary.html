@@ -258,19 +258,19 @@
             </li>
             <li>
               example types of selectors:
+              <ul class="sub_points">
+                <li>
+                  tag e.g. paragraph: <code>p {attribute:value;}</code>
+                </li>
+                <li>
+                  class: <code>.class_name {attribute:value}</code>
+                </li>
+                <li>
+                  attribute: <code>tag[attribute="value"] {attribute: value;}</code>
+                  (<a href="https://css-tricks.com/attribute-selectors/">more info</a>)
+                </li>
+              </ul>
             </li>
-            <ul class="sub_points">
-              <li>
-                tag e.g. paragraph: <code>p {attribute:value;}</code>
-              </li>
-              <li>
-                class: <code>.class_name {attribute:value}</code>
-              </li>
-              <li>
-                attribute: <code>tag[attribute="value"] {attribute: value;}</code>
-                (<a href="https://css-tricks.com/attribute-selectors/">more info</a>)
-              </li>
-            </ul>
             <li>
               for easier orientation, each attribute/value pair is on separate
               indented line
@@ -286,22 +286,22 @@
             <li>
               we should use tags that express the meaning of their content,
               for example:
+              <ul class="points add">
+                <li>
+                  if a text is a heading to what comes after it, we should tag it
+                  <code>h{1..6}</code> rather than just increase its size, make it
+                  bold and give it borders/margins
+                </li>
+                <li>
+                  if something is just part of a normal paragraph and we want to
+                  make it stand out by bigger size, bold font and borders <strong>but
+                  it is not a logical heading to what comes after it</strong>, we
+                  should do the style changes through e.g. class, but we should
+                  not use <code>h</code> tag just because it comes with the style
+                  changes we want
+                </li>
+              </ul>
             </li>
-            <ul class="points add">
-              <li>
-                if a text is a heading to what comes after it, we should tag it
-                <code>h{1..6}</code> rather than just increase its size, make it
-                bold and give it borders/margins
-              </li>
-              <li>
-                if something is just part of a normal paragraph and we want to
-                make it stand out by bigger size, bold font and borders <strong>but
-                it is not a logical heading to what comes after it</strong>, we
-                should do the style changes through e.g. class, but we should
-                not use <code>h</code> tag just because it comes with the style
-                changes we want
-              </li>
-            </ul>
           </ul>
         </div>
 
