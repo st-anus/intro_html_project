@@ -11,10 +11,10 @@
       <div class="title">
         <h1>Intro to Programming</h1>
         <div class="signature">
-          <img src="images/screen2.png" alt="screenshot">
+          <img src="images/screen.png" alt="screenshot">
           <div>
-          (my <a href="https://www.udacity.com/course/nd000">Udacity
-          Nanodegree</a> notes)
+          my <a href="https://www.udacity.com/course/nd000">Udacity
+          Nanodegree</a> notes
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
         <div class="concept">
           <h3>world wide web</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               html: HyperText Markup Language - programming language to code
               html documents (almost every web page)
@@ -41,7 +41,7 @@
         <div class="concept">
           <h3>html markup</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               markup - code that determines what content (e.g. text) looks like
               on a web page
@@ -50,7 +50,7 @@
               <code>
               &lt;opening tag&gt;contents&lt;/closing tag&gt;
               </code>
-              <ul class="add_points">
+              <ul class="points add">
                 <li>
                   either <em>inline</em> (refers to content within the
                   line - like bold or link) or <em>block</em> (creates
@@ -64,7 +64,7 @@
         <div class="concept">
           <h3>key take-aways</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               computers are (awesomly) stupid - they do what is programmed, all
               of it and nothing but it, as long as they can understand it (bold
@@ -82,7 +82,7 @@
         <div class="concept">
           <h3>vocabulary (copied from udacity website)</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               <b>Tag</b>
               : An HTML tag is always contained within angled brackets. Most
@@ -111,7 +111,7 @@
         <div class="concept">
           <h3>structure of a document</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               html is used for classification of webpage structure through its
               syntax, rules and basic element - tag
@@ -134,7 +134,7 @@
         <div class="concept">
           <h3>boxifying (real word)</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               separating content into visual "boxes" within the webpage in a
               meaningful way (this part consist of these parts which consist
@@ -155,23 +155,23 @@
         <div class="concept">
           <h3>class attributes</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               serve to "mark" elements (like labels on boxes)
             </li>
             <li>
-              attached to elements within opening tags: &lt;tag 
-              <code>class:"class attribute name"</code>&gt;contents&lt;/closing
-              tag&gt;
+              attached to elements within opening tags: <code>&lt;tag
+              class:"class attribute name"&gt;</code>
             </li>
             <li>
               enable mass application of style changes to all elements within
               chosen class
-              <ul class="add_points">
+              <ul class="points add">
                 <li>
-                  <strong>extremely important</strong> in order to avoid repetition within
-                  code and thus increase efficiency of code (positive effect on
-                  speed, as well as costs and time related to project)
+                  <strong>extremely important</strong> in order to avoid
+                  repetition within code and thus increase efficiency of code
+                  (positive effect on speed, as well as costs and time related
+                  to project)
                 </li>
               </ul>
             </li>
@@ -185,7 +185,7 @@
         <div class="concept">
           <h3>css: Cascading Style Sheets</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               cascading means that given rules apply to the element in
               question,as well as all its child elements, unless they have
@@ -207,7 +207,7 @@
         <div class="concept">
           <h3>adding style</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               with css we can define style in a separate stylesheet file(s)
             </li>
@@ -238,7 +238,9 @@
         <div class="concept">
           <h3>selector</h3>
 
-          <ul class="main_points">
+          <img src="images/selectors.png" alt="examples of selectors">
+
+          <ul class="points main">
             <li>
               element to which defined style will be applied (<a
               href="https://css-tricks.com/how-css-selectors-work/">more
@@ -265,8 +267,8 @@
                 class: <code>.class_name {attribute:value}</code>
               </li>
               <li>
-                attribute: <code>tag[attribute="value"] {attribute:
-                value;}</code> (<a href="https://css-tricks.com/attribute-selectors/">more info</a>)
+                attribute: <code>tag[attribute="value"] {attribute: value;}</code>
+                (<a href="https://css-tricks.com/attribute-selectors/">more info</a>)
               </li>
             </ul>
             <li>
@@ -274,20 +276,18 @@
               indented line
             </li>
           </ul>
-          <div class="example_code">
-            <img src="images/selectors.png" alt="examples of selectors">
-          </div>
+          
         </div>
 
         <div class="concept">
           <h3>semantic tagging</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               we should use tags that express the meaning of their content,
               for example:
             </li>
-            <ul class="add_points">
+            <ul class="points add">
               <li>
                 if a text is a heading to what comes after it, we should tag it
                 <code>h{1..6}</code> rather than just increase its size, make it
@@ -308,13 +308,13 @@
         <div class="concept">
           <h3>box sizing &amp; positioning</h3>
 
-          <ul class="main_points">
+          <ul class="points main">
             <li>
               one of the most complex concepts in css
             </li>
             <li>
               all html elements are boxes and each box has 4 components
-              <ul class="add_points">
+              <ul class="points add">
                 <li>
                   margin, border, padding, content
                 </li>
@@ -343,7 +343,7 @@
         <div class="concept">
             <h3>code-test-refine cycle (from nothing to web page)</h3>
 
-          <div class="main_points">
+          <div class="points main">
             <ul>
               <li>
                 a good start is with printout, where one can scatch out the
