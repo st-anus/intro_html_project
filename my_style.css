@@ -1,5 +1,68 @@
 
 
+/*make box size include border & padding*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+} 
+
+
+body {
+  width: 85%;
+  margin: auto;
+  background-color: rgb(10, 20, 10);
+}
+
+
+.content {
+  margin-top: 50px;
+  border: 10px solid rgb(0, 200, 222);
+  border-radius: 0 50px 0 50px;
+  padding: 0 20px;
+}
+
+.content {
+  font-size: 15px;
+  font-family: ubuntu, helvetica;
+  color: rgb(220, 255, 220);
+}
+
+
+.title {
+  margin-bottom: 30px;
+  display: flex;
+}
+
+h1 {
+  width: 70%;
+
+  font-weight: 100;
+  font-size: 55px;
+  text-align: center;
+}
+
+.signature {
+  width: 30%;
+  margin: 20px 20px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+/*resize image within title*/
+img[src="images/screen2.png"] {
+  width: 70%;
+  border-radius: 0 30px 0 30px;
+}
+
+.lesson {
+  background-color: rgb(80, 100, 80);
+  padding: 20px;
+  border-radius: 0 30px 0 30px;
+  margin-bottom: 20px;
+}
+
 
 
 code {
@@ -10,3 +73,15 @@ code {
 strong {
   color: darkred;
 }
+
+.title
+
+.lesson
+
+.concept
+
+.main_points
+
+.add_points
+
+.example_code
