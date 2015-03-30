@@ -3,24 +3,34 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Intro to Programming Nanodegree - notes by st.anus</title>
-    <link rel="stylesheet" type="text/css" href="my_style.css">
+    <title>Intro to Programming Nanodegree (notes by stanus)</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
-    <div class="content">
-      <div class="title">
+    <div id="header">
+    <a href="learning_summary.html">
+        <img src="images/screen2.png" title="home" alt="screenshot">
+    </a>
+      
+      <div id="title">
         <h1>Intro to Programming</h1>
-        <div class="sign">
-          <img src="images/screen.png" alt="screenshot">
-          <div>
-          my <a href="https://www.udacity.com/course/nd000">Udacity
+        <div id="sign">
+          my <a href="https://www.udacity.com/course/nd000" title="my udacity nanodegree">Udacity
           Nanodegree</a> notes
-          </div>
         </div>
       </div>
+      <div id="menu">
+        <a href="#stage1">Stage 1</a>
+        <a href="#stage2">Stage 2</a>
+      </div>
+    </div>
       
-      <div id="stage1">
+    <div class="stages">
+
+      <div class="anchor" id="stage1"> </div>
+
+      <div class="stag">
         <h2>Stage 1: Make Your Own Webpage</h2>
 
         <div class="lesson">
@@ -376,7 +386,8 @@
                   requirements
                 </li>
                 <li>
-                  for testing 'on the go' and fine tuning, one can easily make
+                  for testing 'on the go' and fine tuning, one can 
+                  <a href="images/udacity-alt.png">easily</a> make
                   changes through dev tools and see the effect immediately, and
                   once satisfied, change the code in sublime
                 </li>
@@ -386,7 +397,9 @@
         </div>
       </div>
 
-      <div id="stage2">
+      <div class="anchor" id="stage2"></div>
+
+      <div class="stag">
         <h2>Stage 2: Automate Your Page</h2>
 
         <div class="lesson">
@@ -432,7 +445,7 @@
                 <ul class="points add">
                   <li>
                     python interpreter (a program) 'translates' our code into
-                    zeroes and ones
+                    zeros and ones
                   </li>
                 </ul>
               </li>
@@ -495,20 +508,20 @@
                 math, "=" sign does not mean that left and right sides are
                 equal, it is more like arrow - right side is assigned to left
                 side)
+                <ul class="points add">
+                  <li>
+                    syntax: <code>variable_name = expression</code>
+                  </li>
+                  <li>
+                    to assign value 7 to variable <code>days: days = 7 </code>
+                  </li>
+                  <li>
+                    python always evaluates the <strong>right side first</strong>
+                    and only then assigns the result to the variable on the left
+                    side
+                  </li>
+                </ul>
               </li>
-              <ul class="points add">
-                <li>
-                  syntax: <code>variable_name = expression</code>
-                </li>
-                <li>
-                  to assign value 7 to variable <code>days: days = 7 </code>
-                </li>
-                <li>
-                  python always evaluates the <strong>right side first</strong>
-                  and only then assigns the result to the variable on the left
-                  side
-                </li>
-              </ul>
             </ul>
           </div>
           <div class="concept">
@@ -521,7 +534,7 @@
                 end)
               </li>
               <li>
-                we can concatonate strings using <code>+</code> sign
+                we can concatenate strings using <code>+</code> sign
                 (<code>'uda' + 'city'</code> would result in string
                 <code>'udacity'</code>)
               </li>
@@ -537,17 +550,17 @@
               </li>
               <li>
                 sequencing
+                <ul class="points add">
+                  <li>
+                    we can select part of a string by defining start index position
+                    and end(+1) index position of our selection
+                  </li>
+                  <li>
+                    good explanation can be found
+                    <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3574398630/m-48687716">here</a>
+                  </li>
+                </ul>
               </li>
-              <ul class="points add">
-                <li>
-                  we can select part of a string by defining start index position
-                  and end(+1) index position of our selection
-                </li>
-                <li>
-                  good explanation can be found
-                  <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3574398630/m-48687716">here</a>
-                </li>
-              </ul>
             </ul>
           </div>
         </div>
@@ -564,10 +577,10 @@
                 desired set of outputs
               </li>
               <li>
-                <strong>
+                <em>
                   once properly designed/written, functions can be called any
                   number of times and can be used inside other functions
-                </strong>
+                </em>
               </li>
             </ul>
           </div>
@@ -577,12 +590,12 @@
             <ul class="points">
               <li>
                 to make a function, we need to define it:
+                <ul class="points add">
+                  <li>
+                    syntax: <code>dev function_name(inputs):</code>
+                  </li>
+                </ul>
               </li>
-              <ul class="points add">
-                <li>
-                  syntax: <code>dev function_name(inputs):</code>
-                </li>
-              </ul>
               <li>
                 to use a function, we just need to call it and, based on its
                 purpose, it will (or will not) return some result (output)
@@ -609,9 +622,9 @@
                     (otherwise do something else)
                   </li>
                   <li>
-                    syntax example:
+                    syntax example: <br>
+                    <img src="images/if.png" alt="if example">
                   </li>
-                  <img src="images/if.png" alt="if example">
                 </ul>
               </li>
             </ul>
@@ -632,7 +645,7 @@
                     performing a desired action
                   </li>
                   <li>
-                    <code>for</code> - for defined number of times (usualy
+                    <code>for</code> - for defined number of times (usually
                     linked to range, or number of items in a list) perform a
                     desired action (often on/with each of those items)
                   </li>
@@ -658,6 +671,26 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="footer">
+      <p class="quote">
+        <q>
+          The line of code you don't write is the line of code you never have
+          to debug.
+        </q>
+        <br>
+        <em>Steve Jobs</em>
+      </p>
+
+      <p class="quote">
+        <q>
+          It is well known that a vital ingredient of success is not knowing
+          that what you're attempting can't be done.
+        </q>
+        <br>
+        <em>Terry Pratchett</em>
+      </p>
     </div>
   </body>
 </html>
