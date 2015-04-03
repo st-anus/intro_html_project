@@ -9,9 +9,9 @@
 
   <body>
     <div id="header">
-    <a href="learning_summary.html">
-        <img src="images/screen2.png" title="home" alt="screenshot">
-    </a>
+      <a href="learning_summary.html">
+          <img src="images/screen2.png" title="home" alt="screenshot">
+      </a>
       
       <div id="title">
         <h1>Intro to Programming</h1>
@@ -23,6 +23,7 @@
       <div id="menu">
         <a href="#stage1">Stage 1</a>
         <a href="#stage2">Stage 2</a>
+        <a href="#stage3">Stage 3</a>
       </div>
     </div>
       
@@ -670,6 +671,294 @@
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="anchor" id="stage3"></div>
+
+      <div class="stag">
+        <h2>Stage 3: The Power of Abstraction</h2>
+
+        <div class="lesson">
+          <h3>Object Oriented Programming </h3>
+
+          <div class="concept">
+            <h4>object oriented programming (oop)</h4>
+
+            <ul class="points">
+              <li>
+                concept of programming which focuses on abstraction through classes and instances or objects of classes
+              </li>
+              <li>
+                nothing is written twice if there is a way to do it once and reuse that code
+                <ul class="points add">
+                  <li>
+                    we do not write code to calculate 2+3 and then 4+6, but rather write code (function) to add two numbers together and then apply it on (2,3) and (4,6)
+                  </li>
+                </ul>
+              </li>
+              <li>
+                it is not just a way to reduce unnecessary code, but also to understand, plan and execute projects of any size
+                <ul class="points add">
+                  <li>
+                    we list steps to be done to achieve any particular goal (and, later on, same for each of its parts if it is a complex issue)
+                  </li>
+                  <li>
+                    rather than just diving into the first one, we think about logical and conceptiual similarities of those parts
+                  </li>
+                  <li>
+                    based on these similarities we create classes to be used during execution - the code on its own does not do anything
+                  </li>
+                  <li>
+                    we apply those on as many objects as necessary to get the output we need without the necessity to rewrite the same code for every object
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>video</h4>
+
+            <ul class="points">
+              <li>
+                https://www.youtube.com/watch?v=SS-9y0H3Si8
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>Important oop Concepts</h3>
+
+          <div class="concept">
+            <h4>class</h4>
+
+            <ul class="points">
+              <li>
+                code to define properties of (and functions executable on) objects or instances that will be later created under that class
+              </li>
+              <li>
+                __init__ defines the initial properties of the class (meaning initial properties of each object created under that class)
+              </li>
+              <li>
+                in a way, class is like a general definition of something in an encyclopedia, for example: "dog: mammal with 4 legs covered in fur of various colors"
+                <ul class="points add">
+                  <li>
+                    mammal would be a parent class that would have its own properties which would automatically apply on each object of class dog
+                  </li>
+                  <li>
+                    each dog would by default have 4 legs - something that is true at initiation, but might be redefined for each object later on
+                  </li>
+                  <li>
+                    just by reading this few words of the class, we would know that we might expect each object of this class to have fur color defined, but not hair color
+                  </li>
+                  <li>
+                    if we knew properties of this class, we would also know not to ask if it is a dog, if we saw a flying object but rather if it is a plane (different class with property "wings" defined), a bird (yet another class) or the Superman (an object of  "superhero" class which has flight capability defined in its code even though it does not have wings)
+                  </li>
+                </ul>
+              </li>
+              <li>
+                syntax: Class_name(Parent_name #if any#): followed by constructor and any instance variables and methods related to the class
+                <ul class="points add">
+                  <li>
+                    constructor, instance variables and methods are explained later
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>object (or instance)</h4>
+
+            <ul class="points">
+              <li>
+                an instance of a class
+              </li>
+              <li>
+                class is a description and as such it does not exist in itself - objects are existing representations of a class
+              </li>
+              <li>
+                let's say we know class dog, its properties and functions (even though we might have never seen a real dog before)
+                <ul class="points add">
+                  <li>
+                    if someone tells us they have a dog, we can ask about its fur color knowing it is a valid question
+                  </li>
+                  <li>
+                    if they tell us the dog has 3 legs, we can ask why because we know it had 4 by default
+                  </li>
+                  <li>
+                    if we see a flying dog, we know something is wrong and it will probably result in an error
+                  </li>
+                </ul>
+              </li>
+              <li>
+                syntax: object_name = module.Class_name(instance variable values)
+                <ul class="points add">
+                  <li>
+                    module (optional) and instance variables explained below
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>constructor</h4>
+
+            <ul class="points">
+              <li>
+                a statement defining which instance variables will be initially required for any object under certain class
+              </li>
+              <li>
+                syntax: def __init__: (self, instance_variable1, i_v2, ...): followed by instance variable assignments
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>instance methods</h4>
+
+            <ul class="points">
+              <li>
+                finctions defined within a class that can be called for every instance of the class
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>instance variables</h4>
+
+            <ul class="points">
+              <li>
+                variables which define (and thus have to be defined for) every instance based on its class
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>class variables</h4>
+
+            <ul class="points">
+              <li>
+                variables defined for whole class - shared by each instance (without direct assignment)
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>visual representation</h4>
+
+            <ul class="points">
+              <li>
+                PICTURE### http://s23.postimg.org/tlvgsbiqz/Screen_Shot_2014_04_18_at_4_52_12_PM.png ###
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>inheritance</h4>
+
+            <ul class="points">
+              <li>
+                child class inherits instance methods and variables (if so defined) of the parent class
+              </li>
+              <li>
+                to mark a class as a child of another class, parent class name has to be an argument of the child class definition
+              </li>
+              <li>
+                syntax: Child_class_name(Parent_name):
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>method overriding</h4>
+
+            <ul class="points">
+              <li>
+                if an instance method should work differently for a child than it works for a parent, it can be defined anew within the child class
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>module</h4>
+
+            <ul class="points">
+              <li>
+                a python file containing classes and functions which are to be used in other python files
+              </li>
+              <li>
+                code from a module can be called by importing its name (without ".py") as long as the module is part of the same folder (or package if path is provided), or python standard
+              </li>
+              <li>
+                syntax: import module_name OR from module_name import function_name/class_name
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>library</h4>
+
+            <ul class="points">
+              <li>
+                a collection of modules and standalone functions
+              </li>
+              <li>
+                modules and functions in python standard library are installed by default and can be used without the need of additional download
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>video</h4>
+
+            <ul class="points">
+              <li>
+                https://www.youtube.com/watch?v=lbXsrHGhBAU
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="lesson">
+          <h3>OOP vs. HTML&CSS</h3>
+
+          <div class="concept">
+            <h4>abstract thinking</h4>
+
+            <ul class="points">
+              <li>
+                even though html&css are not object oriented languages, abstract thinking is present in all of them
+              </li>
+              <li>
+                in html, head element contains data that apply to each other element (like charset) and thus do not need to be repeated
+              </li>
+              <li>
+                attributes like class are then used in css to apply one style definition to all tags which contain that class
+                <ul class="points add">
+                  <li>
+                    this is actualy quite similar to python classes which "apply" defined variables and methods to all object of that class
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>inheritance</h4>
+
+            <ul class="points">
+              <li>
+                just like in oop, html elements inherit properties of their parents (to certain extent) including their style from css
+              </li>
+              <li>
+                in both, inheritance can be overriden by redefining what applies to the child
+              </li>
+            </ul>
+          </div>
+          <div class="concept">
+            <h4>separation of concepts</h4>
+
+            <ul class="points">
+              <li>
+                html as the content and css as something (the form) to be applied to the content are kept in different files
+              </li>
+              <li>
+                similarily, classes and functions to be applied within a code are often defined within a different file - module
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </div>
 
