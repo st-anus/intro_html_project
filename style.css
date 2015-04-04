@@ -129,6 +129,29 @@ img[src="images/selectors.png"] {
   margin: 1% 0 0 1%;
 }
 
+iframe {
+  display: block;
+
+  height: 15em;
+  margin: 2% auto;
+  width: 25em;
+}
+
+.visual {
+  margin: auto;
+  width: 50%;
+
+  overflow: auto;
+}
+
+img[src="images/classes.png"] {
+  border: rgb(125, 125, 125) 0.1em solid;
+  margin-right: 2%;
+  width: 70%;
+
+  float: left;
+}
+
 #footer {
   background-color: rgb(0, 165, 150);
   overflow: auto;
